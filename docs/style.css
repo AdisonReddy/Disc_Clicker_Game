@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+div.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.708);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    height: 40px;
+    width: 400px;
+    margin: 10px 0px 10px 0px;
+}
+div.navbar a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    font-weight:lighter;
+    font: 15px 'Lato';
+    padding: 10px 30px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.navbar a:before, div.navbar a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background:white;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+div.navbar a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+div.navbar a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+div.navbar a:hover:before, div.navbar a:hover:after
+{
+    opacity: 1;
+} 
+#Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    border-radius: 5%;
+    box-shadow: inset 15px 30px 60px 15px;
+    background-color: rgba(23, 23, 23, 0.918);
+    margin-bottom: 20px;
+}
+
+#DiscImage{
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/DiscImage.png");
+    background-size: cover;
+}
+#ButtonsAndCounts{
+    color: white;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+section{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#DiscImage:hover{
+    animation: rotate 4s;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
+}
+#Click{
+    grid-column: 1/span3;
+}
+#Auto,#Multi{
+    grid-row-start: 2;
+}
+#Auto{
+    float: left;
+    margin-left: 20px;
+    opacity: 1;
+}
+#Multi{
+    margin-left: 50px;
+    float: right;
+    grid-column-start: 3;
+    opacity: 1;
+}
+#GetDiscButton{
+    display: none;
+}
+#ResetGame{
+    margin-top: 70px;
+    opacity: .6;
+}
+#Extras{
+    display: none;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+#AcheivementBox{
+    display: none;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    background-color: rgba(23, 23, 23, 0.918);
+}
+#AcheivementB{
+    color: black;
+}

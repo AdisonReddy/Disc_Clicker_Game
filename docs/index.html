@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="https://www.innovadiscs.com/">Company Info</a>
+            <a href="https://github.com/AdisonReddy">Developer</a>
+            <a href="https://orteil.dashnet.org/cookieclicker/">Inspiration</a>
+        </div>
+    </header>
+    <div id="Container">
+        <h1>YOU CAN NEVER HAVE ENOUGH DISCS</h1>
+        <h2>(click the disc to add to your collection)</h2>
+        <div id="DiscImage"></div>
+        <div id="ButtonsAndCounts">
+            <section id="Auto">
+                <button type="button" id="BuyAutoCLicker">Get Sponsored</button>
+                <h1 id="AutoClickerCount"></h1>
+                <h1 id="AutoClickerCost"></h1>
+            </section>
+            <section id="Click">
+                <h1 id="DiscCount"></h1>
+                <h1 id="DiscsPerSecond"></h1>
+                <button type="button" id="GetDiscButton">Get Disc</button>
+            </section>
+            <section id="Multi">
+                <button type="button" id="BuyClickMulitplier">Enter Tournament</button>
+                <h1 id="ClickMuliplierCount"></h1>
+                <h1 id="ClickMultiplierCost"></h1>
+            </section>
+        </div>
+        <script src="scripts.js"></script>
+    </div>
+    <div id="AcheivementBox">
+    <h1 id="Acheivement">ACHEIVMENT UNLOCKED!!</h1>
+    <h2 id="AcheivementB">You moved up from Novice to Recreational , Pick A Reward!</h2>
+    </div>
+    <div id="Extras">
+        <button type="button" id="NewBackground" onclick="NewBackground()">New Background</button>
+        <button type="button" id="NewDisc" onclick="NewDisc()">New Disc Image</button>
+    </div>
+    <button type="button" id="ResetGame" onclick="ResetGame()">Reset Game</button>
+</body>
+</html>
+
