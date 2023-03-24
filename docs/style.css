@@ -10,7 +10,7 @@ body{
 div.navbar{
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.708);
+    background-color: rgba(0, 0, 0, 0.848);
     font-family: 'Lato', sans-serif;
     text-align: center;
     height: 40px;
@@ -74,7 +74,7 @@ div.navbar a:hover:before, div.navbar a:hover:after
     margin-top: 30px;
     width: 300px;
     height: 300px;
-    background-image: url("../images/DiscImage.png");
+    background-image: url("../images/Destroyer.png");
     background-size: cover;
 }
 #ButtonsAndCounts{
@@ -137,7 +137,7 @@ section{
     margin-top: 70px;
     opacity: .6;
 }
-#Extras{
+#Rewards{
     display: none;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -151,7 +151,87 @@ section{
     width: 500px;
     height: 50px;
     background-color: rgba(23, 23, 23, 0.918);
+    animation: zoomie 4s;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+@keyframes zoomie{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
 }
 #AcheivementB{
     color: black;
+    background-color: white;
+}
+
+#Rewards2{
+    display: none;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+#AcheivementBox2{
+    display: none;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    background-color: rgba(23, 23, 23, 0.918);
+    animation: zoomie 4s;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+#AcheivementB2{
+    color: black;
+    background-color: white;
+}
+
+
+#Rewards3{
+    display: none;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+#AcheivementBox3{
+    display: none;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    background-color: rgba(23, 23, 23, 0.918);
+    animation: zoomie 4s;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+#AcheivementB3{
+    color: black;
+    background-color: white;
+}
+
+
+#Rewards4{
+    display: none;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+#AcheivementBox4{
+    display: none;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    background-color: rgba(23, 23, 23, 0.918);
+    animation: zoomie 4s;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+#AcheivementB4{
+    color: black;
+    background-color: white;
 }

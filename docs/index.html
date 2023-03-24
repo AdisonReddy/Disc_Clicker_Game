@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <header>
@@ -39,15 +41,51 @@
         </div>
         <script src="scripts.js"></script>
     </div>
-    <div id="AcheivementBox">
-    <h1 id="Acheivement">ACHEIVMENT UNLOCKED!!</h1>
-    <h2 id="AcheivementB">You moved up from Novice to Recreational , Pick A Reward!</h2>
-    </div>
-    <div id="Extras">
-        <button type="button" id="NewBackground" onclick="NewBackground()">New Background</button>
-        <button type="button" id="NewDisc" onclick="NewDisc()">New Disc Image</button>
-    </div>
-    <button type="button" id="ResetGame" onclick="ResetGame()">Reset Game</button>
-</body>
-</html>
 
+    <!--Acheivement1-->
+    <div id="AcheivementBox">
+        <h1 id="Acheivement">ACHEIVMENT UNLOCKED!!</h1>
+        <h2 id="AcheivementB">You moved up from Novice to Recreational , Pick A Reward!</h2>
+    </div>
+    <div id="Rewards">
+        <button type="button" id="NewBackground" onclick="NewBackground(),audioChains.play()">New Background</button>
+        <button type="button" id="NewDisc" onclick="NewDisc(),audioChains.play()">New Disc Image</button>
+    </div>
+
+    <!--Acheivement2-->
+    <div id="AcheivementBox2">
+        <h1 id="Acheivement2">ACHEIVMENT UNLOCKED!!</h1>
+        <h2 id="AcheivementB2">You moved up from Recreational to Intermediate , Pick A Reward!</h2>
+    </div>
+    <div id="Rewards2">
+        <button type="button" id="NewBackground2" onclick="NewBackground2(),audioChains.play()">New Background</button>
+        <button type="button" id="NewDisc2" onclick="NewDisc2(),audioChains.play()">New Disc Image</button>
+    </div>
+
+    <!--Acheivement3-->
+    <div id="AcheivementBox3">
+        <h1 id="Acheivement3">ACHEIVMENT UNLOCKED!!</h1>
+        <h2 id="AcheivementB3">You moved up from Intermediate to Advanced , Pick A Reward!</h2>
+    </div>
+    <div id="Rewards3">
+        <button type="button" id="NewBackground3" onclick="NewBackground3(),audioChains.play()">New Background</button>
+        <button type="button" id="NewDisc3" onclick="NewDisc3(),audioChains.play()">New Disc Image</button>
+    </div>
+
+    <!--Acheivement4-->
+    <div id="AcheivementBox4">
+        <h1 id="Acheivement4">ACHEIVMENT UNLOCKED!!</h1>
+        <h2 id="AcheivementB4">You moved up from Advanced to Open, welcome to the big leagues , Pick A Reward!</h2>
+    </div>
+    <div id="Rewards4">
+        <button type="button" id="NewBackground4" onclick="NewBackground4(),audioChains.play()">New Background</button>
+        <button type="button" id="NewDisc4" onclick="NewDisc4(),audioChains.play()">New Disc Image</button>
+    </div>
+
+    <button type="button" id="ResetGame" onclick="ResetGame()">Reset Game</button>
+
+    
+
+</body>
+
+</html>
